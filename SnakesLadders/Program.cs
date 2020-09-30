@@ -17,6 +17,7 @@ namespace SnakesLadders
             //variables
             int START_POSITION = 0;
             int CURRENT_POSITION = 0, NEW_POSITION;
+            int NO_OF_TIMES_DICE_ROLLED = 0 ;
 
             while (CURRENT_POSITION < WINNING_POSITION)
             {
@@ -54,9 +55,12 @@ namespace SnakesLadders
                         Console.WriteLine("No Play");
                         break;
                 }
+                NO_OF_TIMES_DICE_ROLLED++;
+
                 NEW_POSITION = CURRENT_POSITION;
                 Console.WriteLine("Your new position is: " + NEW_POSITION);
             }
+            Console.WriteLine("Number of times dice rolled to win: " + NO_OF_TIMES_DICE_ROLLED);
         }
     }
 }
