@@ -56,6 +56,7 @@ namespace SnakesLadders
                         break;
                 }
                 NO_OF_TIMES_DICE_ROLLED++;
+
                 NEW_POSITION = CURRENT_POSITION;
                 Console.WriteLine("Your new position is: " + NEW_POSITION);
             }
