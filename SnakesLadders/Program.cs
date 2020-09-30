@@ -34,6 +34,10 @@ namespace SnakesLadders
                         CURRENT_POSITION += die;
                         Console.WriteLine("Ladder");
                         NEW_POSITION = CURRENT_POSITION;
+                        if (CURRENT_POSITION > WINNING_POSITION)
+                        {
+                            CURRENT_POSITION -= die;
+                        }
                         break;
 
                     case SNAKE:
@@ -48,9 +52,9 @@ namespace SnakesLadders
 
                     default:
                         Console.WriteLine("No Play");
-                        NEW_POSITION = CURRENT_POSITION;
                         break;
                 }
+                NEW_POSITION = CURRENT_POSITION;
                 Console.WriteLine("Your new position is: " + NEW_POSITION);
             }
         }
