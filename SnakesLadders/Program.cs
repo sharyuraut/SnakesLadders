@@ -13,6 +13,11 @@ namespace SnakesLadders
 
             //variables
             int START_POSITION = 0;
+
+            Random random = new Random();
+
+            int die = random.Next(1, 7);
+            Console.WriteLine("Rolling Die: " + die);
         }
     }
 }
