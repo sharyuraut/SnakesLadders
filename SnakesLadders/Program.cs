@@ -32,8 +32,16 @@ namespace SnakesLadders
                     break;
 
                 case SNAKE:
-                    CURRENT_POSITION -= die;
-                    Console.WriteLine("Snake");
+                    if(CURRENT_POSITION == START_POSITION)
+                    {
+                        CURRENT_POSITION = 0;
+                        Console.WriteLine("Snake");
+                    }
+                    else
+                    {
+                        CURRENT_POSITION -= die;
+                        Console.WriteLine("Snake");
+                    }
                     break;
 
                 default:
